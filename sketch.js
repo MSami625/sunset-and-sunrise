@@ -31,11 +31,11 @@ function draw(){
     fill("blue");
     textSize(10);
 if(hour>=12){
-    text("Time :"+hour+"PM",50,100);
+    text("Time :"+hour%12+"PM",50,100);
 }else if(hour==0){
     text("Time : 12AM",100,100);
 }else{
-    text("Time :"+hour+"AM",50,100);
+    text("Time :"+hour%12+"AM",50,100);
 }
 
 }
